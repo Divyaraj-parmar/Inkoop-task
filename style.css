@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Readex+Pro:wght@300;400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
+
+/* navbar-css */
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.container{
+    justify-content: center;
+    margin:30px 0px ;
+    align-items: center;
+}
+.navbar{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.nav-content{
+    display: flex;
+    justify-content: space-around;
+    width: 70%;
+}
+.logo{
+    font-weight: bold;
+    float: left;
+}
+.search-area{
+    width: 30%;
+}
+
+
+li{
+    list-style-type: none;
+    display: inline-block;   
+    margin: 10px 15px;
+}
+.navbar a{
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    font-family: 'Readex Pro', sans-serif;  
+}
+.search-bar{
+    height: 35px;
+    margin-top: 5px;
+    border:0;
+    /* margin-left: 10%; */
+    float: right;
+    border-radius: 20px;
+    background-color:rgb(243, 241, 241);
+    margin-right: 20px;
+}
+::placeholder{
+    padding: 0 10px;
+    font-size: 15px;
+    justify-content: space-around;
+}
+/* Upper - Section */
+.upr-content{
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    width: 50%;
+    margin: auto;
+    justify-content: center;
+}
+section >.upr-content button{
+    border:0;
+    background-color: rgb(19, 70, 148);
+    border-radius:15px;
+    color: white;
+    font-size: larger;
+    padding: 20px;
+    margin: 20px;
+}
+.upr-heading{
+    font-size: 60px;
+}
+.upr-text{
+    font-size: 20px;
+    
+    justify-content: center;
+    margin: 15px; 
+    color: gray;
+}
+/* middle-section */
+.mdl-sec{
+  padding:0  8%;
+  padding-top: 8%;
+}
+.text-heading{
+    color: rgba(0, 81, 255, 0.938); 
+    font-size: 20px; 
+    font-family: sans-serif;
+}
+.text-heading2{
+    font-size: 50px;
+     width: 70%;  
+}
+.text-pr{
+    color: gray;
+    font-size:25px;
+    width: 75%;
+}
+.box{  
+    border-style: outset;
+    width: 50%;
+    height: 300px;
+    position:relative;
+    border: 0;
+    box-shadow: 5px 10px 10px #888888;
+    bottom:450px;
+    left:650px;
+    border-radius:20px;
+    background-color: white;
+}
+.text{
+    padding: 5%;
+}
+.icon{
+    position: relative;
+    top: 80px;
+    left:50px;
+    font-size: 30px;
+    color: grey;
+    display: flex;
+    justify-content: center;
+}
+i{
+    margin-left: 15px;
+}
+
+
+ /* Last Section */
+ .ls-content{
+   background-color: rgba(0, 0, 255, 0.76);
+   border-radius: 15px;
+   margin:0  8%;
+   color: white;
+   
+ }
+ .ls-cnt-head{
+    text-align: center;
+    font-size: 50px;
+    padding-top: 15px;
+
+
+ }
+ .writers{
+     display: flex;
+     flex-wrap: wrap;
+     font-family: 'Ubuntu', sans-serif;
+     font-size: 20px;
+     justify-content: center;
+ }
+.writer{
+     margin:25% ;
+     border: 1px solid black ;
+     width: 100px;
+     height: 100px;
+     border-radius: 50px;
+ }
+
+ .burger{
+   cursor: pointer;
+   position: absolute;
+   left: 5%;
+   right:0;
+   display: none;
+ }
+ .line{
+     width: 33px;
+     background-color: black;
+     height: 4px;
+     margin: 5px 3px;
+     border-radius: 2px;
+ }
+ .search-btn{
+     display: none;
+ }
+ /* Responsive */
+ @media(max-width:750px){
+
+      li{
+          display: block;
+      }
+      .logo{
+          margin-left:15% ;
+      }
+      .nav-content{
+          flex-direction: row-reverse;
+      }
+      .burger{
+          display: block;
+          position: absolute;
+          left: 5%;
+          
+      }
+      .search-btn{
+        display: block;
+      }
+      .ls-items ,.search-area{
+          display: none;
+      }
+      /* upper section */
+      .upr-content{
+         width: 80%;
+      }
+      .upr-heading{
+          font-size: xx-large;
+      }
+      .upr-text{
+          font-size: large;
+      }
+       
+    /* middle-section */
+
+    .image{
+        width: 90vw;
+        margin-right: 0;
+    }
+    .box{
+       width: 75vw;
+       height: 50vw;
+       position: relative;
+       left: 10vw;
+       bottom: 10vw;
+    }
+    .text-heading{
+        font-size: larger;
+    }
+    .text-heading2{
+        width: 100%;
+        font-size: x-large;
+    }
+    .text-pr{
+        width: 100%;
+        font-size: small;
+    }
+    .icon{
+      position: relative;
+      left: 1vw;
+      top:15vw;
+    }
+       /*Last-Section  */
+    .lst-sec{
+       margin-top: 10%;
+
+    }
+    .ls-cnt-head{
+        font-size: x-large;
+    }
+    .writers{
+      font-size: small;
+      font-weight: bold;
+    }
+    .li{
+        display: inline-block;
+    }
+   
+     
+ }
